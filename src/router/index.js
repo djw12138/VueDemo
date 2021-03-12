@@ -1,21 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import Fisrt from '@/components/first'
+import EchartsDemo1 from '@/components/echarts/demo1'
+import EchartsDemo2 from '@/components/echarts/demo2'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/echarts/demo1',
+      name: 'EchartsDemo1',
+      component: EchartsDemo1
     },
     {
-      path: '/first',
-      name: 'Fisrt',
-      component: Fisrt
+      path: '/echarts/demo2',
+      name: 'EchartsDemo2',
+      component: EchartsDemo2
     }
   ]
 })
